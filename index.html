@@ -1,12 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2834471c2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+  </head>
+  <body>
+    <nav class="navbaar">
+      <div class="nav-container section-gap-x">
+        <img src="img/Bexon-logo.webp" alt="" />
+        <div class="nav-item">
+          <ul class="header-item">
+            <li class="Dropdwon">
+              <a href="#">Home</a>
+              <svg
+                class="nav-drop-svg"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <ul class="dropdown-contant">
+                <li class="d-list"><a href="#">Home One</a></li>
+                <li class="d-list"><a href="#">Home two</a></li>
+                <li class="d-list"><a href="#">Home there</a></li>
+                <li class="d-list"><a href="#">Home four</a></li>
+              </ul>
+            </li>
+            <li class="Dropdwon">
+              <a href="#">Pages</a>
+              <svg
+                class="nav-drop-svg"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <ul class="dropdown-contant">
+                <li class="d-list"><a href="#">About Us</a></li>
+                <li class="d-list"><a href="#">Team</a></li>
+                <li class="d-list"><a href="#">Team Details</a></li>
+                <li class="d-list"><a href="#">Fqq</a></li>
+                <li class="d-list"><a href="#">Pricing Page</a></li>
+                <li class="d-list"><a href="#">Error 404</a></li>
+              </ul>
+            </li>
+            <li class="Dropdwon">
+              <a href="#">Services</a>
+              <svg
+                class="nav-drop-svg"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <ul class="dropdown-contant">
+                <li class="d-list"><a href="#">Services</a></li>
+                <li class="d-list"><a href="#">Services Details</a></li>
+              </ul>
+            </li>
+            <li class="Dropdwon">
+              <a href="#">Portfolio</a>
+              <svg
+                class="nav-drop-svg"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <ul class="dropdown-contant">
+                <li class="d-list"><a href="#">Portfolio</a></li>
+                <li class="d-list"><a href="#">Portfolio Details</a></li>
+              </ul>
+            </li>
+            <li class="Dropdwon">
+              <a href="#">Blog</a>
+              <svg
+                class="nav-drop-svg"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <ul class="dropdown-contant">
+                <li class="d-list"><a href="#">Blog</a></li>
+                <li class="d-list"><a href="#">Blog Details</a></li>
+              </ul>
+            </li>
+            <li class="Dropdwon"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="header-menu">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <button class="item-btn">
+            <h4>Let's Talk</h4>
+            <span class="erro">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </button>
+
+          <!-- Trigger Button -->
+          <a href="#myModal" class="open-button">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </a>
+
+          <!-- Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <img src="img/scrolbar-logo.webp" alt="" class="scroll-logo" />
+            <div class="accordion-nav">
+  <ul class="accordion-list">
+    <li class="accordion-item">
+      <input type="checkbox" id="acc-home" class="accordion-toggle" hidden />
+      <label for="acc-home" class="accordion-label">
+        Home
+        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24">
+          <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <ul class="accordion-content">
+        <li><a href="#">Home One</a></li>
+        <li><a href="#">Home Two</a></li>
+        <li><a href="#">Home Three</a></li>
+        <li><a href="#">Home Four</a></li>
+      </ul>
+    </li>
+
+    <li class="accordion-item">
+      <input type="checkbox" id="acc-pages" class="accordion-toggle" hidden />
+      <label for="acc-pages" class="accordion-label">
+        Pages
+        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24">
+          <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <ul class="accordion-content">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Team Details</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Pricing Page</a></li>
+        <li><a href="#">Error 404</a></li>
+      </ul>
+    </li>
+
+    <li class="accordion-item">
+      <input type="checkbox" id="acc-services" class="accordion-toggle" hidden />
+      <label for="acc-services" class="accordion-label">
+        Services
+        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24">
+          <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <ul class="accordion-content">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Services Details</a></li>
+      </ul>
+    </li>
+
+    <li class="accordion-item">
+      <input type="checkbox" id="acc-portfolio" class="accordion-toggle" hidden />
+      <label for="acc-portfolio" class="accordion-label">
+        Portfolio
+        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24">
+          <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <ul class="accordion-content">
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Portfolio Details</a></li>
+      </ul>
+    </li>
+
+    <li class="accordion-item">
+      <input type="checkbox" id="acc-blog" class="accordion-toggle" hidden />
+      <label for="acc-blog" class="accordion-label">
+        Blog
+        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24">
+          <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <ul class="accordion-content">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Blog Details</a></li>
+      </ul>
+    </li>
+
+    <li class="accordion-item no-submenu">
+      <a href="#" class="accordion-label">Contact</a>
+    </li>
+  </ul>
+</div>
+
+
+              <p>
+                Developing personalize our customer journeys to increase
+                satisfaction & loyalty of our expansion recognized by industry
+                leaders
+              </p>
+
+              <h1 class="scroll-search">Search Now!</h1>
+              <div class="input-container">
+                <input type="text" id="text" placeholder="Search here..." />
+                <svg
+                  class="search-svg-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+
+              <h1 class="main-info">Contact Info</h1>
+              <div class="scroll-contact">
+                <span>Phone</span><br />
+                <a href="#">+1 (009) 123-4567</a>
+              </div>
+              <div class="scroll-contact">
+                <span>Email</span><br />
+                <a href="#">mailto:Service@bexon.com</a>
+              </div>
+              <div class="scroll-contact">
+                <span>Location</span><br />
+                <a href="#">993 Renner Burg, West Rond, MT 12345-678</a>
+              </div>
+
+              <h1 class="scroll-icon-hed">Follow Us</h1>
+              <div class="scroll-icon">
+                <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+              </div>
+
+              <a href="#" class="close-button">
+                <!-- <i class="fa-solid fa-x"></i> -->
+                <svg
+                  width="25px"
+                  height="25px"
+                  class="close-svg-icon"
+                  viewBox="-0.5 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M3 21.32L21 3.32001"
+                      stroke="#ffffff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M3 3.32001L21 21.32"
+                      stroke="#ffffff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===========script====================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("myModal");
+        const modalContent = modal.querySelector(".modal-content");
+
+        document.addEventListener("click", function (event) {
+          // Check if modal is open via :target (hash in URL)
+          if (location.hash === "#myModal") {
+            // If click is outside modal-content, close modal
+            if (!modalContent.contains(event.target)) {
+              window.location.hash = ""; // Closes modal
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
