@@ -28,6 +28,10 @@ body {
 }
 
 /* ========== Header Navigation ========== */
+.accordion-nav{
+  display: none;
+}
+
 .nav-container {
   background-color: #fff;
   display: flex;
@@ -527,41 +531,10 @@ body {
   .input-container {
     display: none;
   }
-}
 
-@media (max-width: 480px) {
-  .nav-container {
-    padding: 1rem;
-  }
 
-  .modal {
-    margin: 5px;
-    height: 98vh;
-  }
 
-  .modal-content img {
-    width: 120px;
-    height: 32px;
-  }
-
-  .modal-content h1 {
-    font-size: 20px;
-  }
-
-  .modal-content input {
-    height: 50px;
-    font-size: 16px;
-    line-height: 50px;
-  }
-
-  .modal-content .search-svg-icon {
-    width: 50px;
-    height: 50px;
-    padding: 14px;
-  }
-}
-
-.accordion-nav {
+  .accordion-nav {
   width: 100%;
 }
 
@@ -633,3 +606,38 @@ body {
   padding-right: 20px;
   text-decoration: none;
 }
+
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 1rem;
+  }
+
+  .modal {
+    margin: 5px;
+    height: 98vh;
+  }
+
+  .modal-content img {
+    width: 120px;
+    height: 32px;
+  }
+
+  .modal-content h1 {
+    font-size: 20px;
+  }
+
+  .modal-content input {
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  .modal-content .search-svg-icon {
+    width: 50px;
+    height: 50px;
+    padding: 14px;
+  }
+}
+
