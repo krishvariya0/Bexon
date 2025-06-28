@@ -793,9 +793,8 @@ body {
   border-right: 15px solid #ecf0f0;
   background-color: #ecf0f0;
   position: absolute;
-      border-top-right-radius: 12px;
-      border-top-left-radius: -12px;
-
+  border-top-left-radius: -12px;
+  border-top-right-radius: 12px;
   bottom: 4px;
   left: 0;
 }
@@ -843,7 +842,6 @@ body {
 .small-customer{
   list-style: none;
   display: flex;
-  /* position: absolute; */
   align-items: center;
   overflow: hidden;
  
@@ -862,8 +860,6 @@ body {
 }
 
 .small-customer-list span svg{
-  /* background-color: #1e8a8a; */
-  /* color: #1e8a8a; */
   background-color: #1e8a8a;
   color: #fff;
   width: 59px;
