@@ -17,9 +17,9 @@ body {
 /* ========== Layout Helpers ========== */
 .container {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: 1466px;
+  margin: 0 15px;
+  padding: 0 15px;
 }
 
 .section-gap-x {
@@ -466,6 +466,7 @@ body {
 }
 
 /* ========== Mobile Responsive Styles ========== */
+
 @media (max-width: 768px) {
   /* Hide search icon on mobile */
   .search {
@@ -641,14 +642,18 @@ body {
 /* ==============================section-1===================== */
 
 .sec-banner {
+  max-width: 1540px;
   margin-top: 15px;
   display: flex;
   gap: 20px;
   overflow: hidden;
+  position: absolute;
+
 }
 
 .left-banner {
-  width: 927px;
+
+  width: 100%;
   height: 800px;
   border-radius: 12px;
   padding-right: 40px;
@@ -661,9 +666,14 @@ body {
   padding-left: 70px;
 }
 
+.banner-right-img {
+  position: relative;
+  width: 100%;
+}
+
 .banner-right-img img {
   /* margin-top: 15px; */
-  width: 727px;
+  width: 100%;
   height: 800px;
   border-radius: 12px;
   object-fit: cover;
@@ -710,6 +720,7 @@ body {
 }
 
 .left-banner-erro-section {
+  position: relative;
   max-width: 475px;
   width: 100%;
   border-top: 1px dashed #313d3d;
@@ -745,8 +756,8 @@ body {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 100%;
-  left: 3%;
+  bottom: 5%;
+  left: 1%;
   gap: 3rem;
 
 
@@ -759,6 +770,7 @@ body {
 .left-scroll-text:hover{
   color: #fff;
 }
+
 
 
 
@@ -776,4 +788,113 @@ body {
 
 /* ======================= main-right=========================== */
 
+.banner-right-small-img {
+  border-top: 15px solid #ecf0f0;
+  border-right: 15px solid #ecf0f0;
+  background-color: #ecf0f0;
+  position: absolute;
+      border-top-right-radius: 12px;
+      border-top-left-radius: -12px;
+
+  bottom: 4px;
+  left: 0;
+}
+
+.banner-right-small-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -27px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(-90deg);
+  z-index: 10000;
+  background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D'0%200%2011%2011'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M11%200L0%200V11C0%204.92487%204.92487%200%2011%200Z'%20fill%3D'%23ecf0f0'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner-right-small-img::before {
+  content: "";
+  position: absolute;
+  right: -28px;
+  bottom: 0;
+  width: 13px;
+  height: 13px;
+  transform: rotate(-90deg);
+  z-index: 10000;
+  background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D'0%200%2011%2011'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M11%200L0%200V11C0%204.92487%204.92487%200%2011%200Z'%20fill%3D'%23ecf0f0'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.banner-right-samll-customer{
+  padding: 30px 25px;
+  background-color: #fff;
+
+  align-items: start;
+  border-radius: 12px;
+}
+.banner-right-samll-customer .small-customer{
+  border-radius: 12px;
+}
+.small-customer{
+  list-style: none;
+  display: flex;
+  /* position: absolute; */
+  align-items: center;
+  overflow: hidden;
+ 
+}
+
+.small-customer-list img{
+  width: 59px;
+  height: 59px;
+ 
+
+} 
+.customer-list-img2,.customer-list-img3{
+   border: 2px solid #fff;
+  margin-left: -10px;
+  border-radius: 50% ;
+}
+
+.small-customer-list span svg{
+  /* background-color: #1e8a8a; */
+  /* color: #1e8a8a; */
+  background-color: #1e8a8a;
+  color: #fff;
+  width: 59px;
+  height: 59px;
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: -10px;
+  transition: 0.2s ease-in-out ;
+}
+
+.small-customer-list span svg:hover{
+  background-color: #166960;
+  transform: translateY(-3px);
+}
+.banner-right-samll-customer-text .small-customer-hed{
+  padding: 40px 0 13px 0;
+  font-weight: 600;
+  font-size:58px;
+  line-height: 0.8;
+  letter-spacing: -1.2px;
+
+}
+
+.banner-right-samll-customer-text .small-customer-small{
+  color: #364e52;
+  font-size: 16px;
+  font-size: 400  ;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
 
