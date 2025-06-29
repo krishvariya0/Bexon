@@ -894,3 +894,152 @@ body {
   margin-bottom: 0;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1440px) {
+  .sec-banner {
+    position: relative;
+    /* flex-wrap: wrap; */
+  }
+  
+  .left-banner,
+  .banner-right-img {
+    flex: 1 1 50%;
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .left-banner-tital {
+    font-size: 56px;
+  }
+    .sec-banner {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 992px) {
+ 
+  .left-banner,
+  .banner-right-img {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  
+  .left-banner {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .left-banner-tital {
+    font-size: 48px;
+  }
+  
+  .left-banner-erro-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-banner {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 700px;
+  }
+  
+  .left-banner-tital {
+    font-size: 40px;
+  }
+  
+  .left-banner-erro-section {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  
+  .left-banner-erro svg {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  
+  .left-banner-erro-text {
+    border-left: none;
+    border-top: 1px dashed #313d3d;
+    padding: 20px 0 0 0;
+  }
+  
+  .banner-right-img {
+    height: 600px;
+  }
+  
+  .left-banner-scroll {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 40px;
+    flex-direction: row;
+    gap: 20px;
+    align-self: center;
+  }
+  
+  .left-scroll-text {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .left-banner {
+    padding: 80px 20px;
+    min-height: 600px;
+  }
+  
+  .left-banner-tital {
+    font-size: 32px;
+  }
+  
+  .left-banner-first {
+    margin-bottom: 15px;
+  }
+  
+  .left-banner-erro-section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .banner-right-samll-customer-text .small-customer-hed {
+    font-size: 42px;
+  }
+  
+  .banner-right-small-img {
+    border-width: 10px;
+  }
+  
+  .small-customer-list img,
+  .small-customer-list span svg {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .small-customer-list span svg {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .left-banner-tital {
+    font-size: 28px;
+  }
+  
+  .left-banner-erro-text {
+    font-size: 16px;
+  }
+  
+  .banner-right-samll-customer {
+    padding: 20px 15px;
+  }
+  
+  .banner-right-samll-customer-text .small-customer-hed {
+    font-size: 36px;
+  }
+}
