@@ -1057,15 +1057,14 @@ body {
     font-size: 36px;
   }
 }
-
-/* ==============secton-2======================= */
+/* ==============section-2======================= */
 .wining-main-section {
   padding: 120px 20px;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
 
-/* Heading Section */
 .wining-section-hed {
   text-align: center;
   margin-bottom: 48px;
@@ -1077,9 +1076,11 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 8px 16px;
-  border: 1px dashed #c9d1d1;
+  border: 1.5px dotted #218b8c;
   margin-bottom: 12px;
   color: #218b8c;
+  background: #f6fafa;
+  border-radius: 8px;
 }
 
 .wining-section-svg-hed p {
@@ -1087,18 +1088,21 @@ body {
   letter-spacing: 1.4px;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
 }
 
 .wining-section-svg {
   width: 24px;
   height: 24px;
   color: inherit;
+  display: inline-block;
 }
 
 .wining-section-second-hed p {
   font-size: 48px;
   font-weight: 600;
   line-height: 1.2;
+  margin: 0;
 }
 
 .wining-section-second-hed span {
@@ -1108,22 +1112,25 @@ body {
 /* Card Grid */
 .wining-section-card-parent {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
-  justify-items: center;
+  justify-items: stretch;
   align-items: stretch;
-  padding: 20px;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Card Style (applies to all cards) */
+/* Card Style */
 .wining-section-card-1,
 .wining-section-card-2,
 .wining-section-card-3 {
-  background: white;
-  padding: 32px;
+  background: #fff;
+  padding: 32px 28px;
   border-radius: 12px;
   border: 1px solid #e0e6e6;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(33, 139, 140, 0.06);
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -1131,41 +1138,93 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s, transform 0.3s;
+  position: relative;
 }
 
-/* Optional: hover effect */
 .wining-section-card-1:hover,
 .wining-section-card-2:hover,
 .wining-section-card-3:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(33, 139, 140, 0.12);
+  transform: translateY(-6px) scale(1.02);
+  border-color: #b2e2e3;
 }
 
-/* Icon inside cards */
 .wining-section-svg svg {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   color: #218b8c;
+  display: block;
 }
 
 .wining-section-contant {
-  margin-top: 30px;
+  margin-top: 10px;
+  width: 100%;
 }
 
-/* Title Text */
 .wining-section-contant-1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   color: #0c1e21;
-  margin: 0;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
 }
 
-/* Description Text */
 .wining-section-contant-2 {
-  margin-top: 20px;
   font-size: 16px;
   color: #4a5a5a;
   line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .wining-main-section {
+    padding: 80px 10px;
+  }
+  .wining-section-second-hed p {
+    font-size: 32px;
+  }
+  .wining-section-card-parent {
+    gap: 20px;
+  }
+  .wining-section-card-1,
+  .wining-section-card-2,
+  .wining-section-card-3 {
+    padding: 24px 16px;
+  }
+  .wining-section-svg svg {
+    width: 44px;
+    height: 44px;
+  }
+  .wining-section-contant-1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wining-main-section {
+    padding: 40px 4vw;
+  }
+  .wining-section-second-hed p {
+    font-size: 22px;
+  }
+  .wining-section-card-parent {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .wining-section-card-1,
+  .wining-section-card-2,
+  .wining-section-card-3 {
+    padding: 16px 8px;
+  }
+  .wining-section-svg svg {
+    width: 36px;
+    height: 36px;
+  }
+  .wining-section-contant-1 {
+    font-size: 16px;
+  }
 }
 
 /* =============section-3================================ */
@@ -1394,6 +1453,8 @@ body {
   background-repeat: no-repeat;
   z-index: 3;
 }
+
+
 /* ============.section-4================================== */
 
 .servise {
@@ -1767,7 +1828,6 @@ body {
     height: 40px;
   }
 }
-
 /* ==============sectio-5===================== */
 .section-5-main {
   padding: 10px;
@@ -1789,8 +1849,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
-
 }
 
 .solution p {
@@ -1798,7 +1856,6 @@ body {
   font-size: 25px;
   color: #fff;
   text-align: center;
-
 }
 
 .wining-section-5-svg {
@@ -1819,10 +1876,7 @@ body {
   color: #1e8a8a;
 }
 
-
-
 /* ==========card================ */
-
 
 .solution-main-section-card {
   display: flex;
@@ -1844,7 +1898,6 @@ body {
   }
 }
 
-
 .solution-section-card {
   position: relative;
   width: 324px;
@@ -1852,12 +1905,20 @@ body {
   overflow: hidden;
   border-radius: 12px;
   border: 2px solid #0d1d1d;
+}
 
+.solution-section-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .solution-section-card-img img {
-  width: 320px;
-  height: 440px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 12px;
   display: block;
@@ -1870,7 +1931,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #18292c;
-  /* background: url(); */
   border-radius: 12px;
   padding: 20px;
   display: flex;
@@ -1879,6 +1939,7 @@ body {
   gap: 15px;
   transition: background-color 0.4s ease;
   overflow: hidden;
+  z-index: 2;
 }
 
 .solution-section-card:hover .solution-section-card-contant {
@@ -1890,6 +1951,7 @@ body {
   color: #009688;
   position: absolute;
   top: 2%;
+  z-index: 3;
 }
 
 .solution-section-card:hover .icon-opacity {
@@ -1897,7 +1959,6 @@ body {
   visibility: hidden;
   transition: opacity 0.4s ease;
 }
-
 
 /* Always visible heading */
 .solution-section-card-contant-text-1 {
@@ -1997,11 +2058,10 @@ body {
   transform: rotate(0deg);
 }
 
-
 @media (max-width: 1024px) {
   .solution-main-section-card {
     flex-wrap: nowrap;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     animation: scroll-my 61s linear infinite;
     padding: 10px 10px 20px 10px;
     gap: 1.5rem;
@@ -2009,8 +2069,8 @@ body {
 
   .solution-section-card {
     flex: 0 0 auto;
-    width: 280px;
-    height: 400px;
+    width: 324px;
+    height: 450px;
   }
 
   .solution-section-card-img img {
@@ -2050,8 +2110,8 @@ body {
 
   .solution-section-card {
     flex: 0 0 auto;
-    width: 240px;
-    height: 360px;
+    width: 324px;
+    height: 450px;
   }
 
   .solution-section-card-img img {
@@ -2062,7 +2122,9 @@ body {
 
   .solution-section-card-contant {
     padding: 12px;
+    display: block
   }
+;
 
   .solution-section-card-contant-text-1 {
     font-size: 18px;
@@ -2095,8 +2157,8 @@ body {
   }
 
   .solution-section-card {
-    width: 200px;
-    height: 320px;
+    width: 324px;
+    height: 450px;
   }
 
   .solution-section-card-contant {
@@ -2107,7 +2169,6 @@ body {
     font-size: 16px;
   }
 }
-
 
 /* ============section=6================================= */
 /* Section 6 main container */
