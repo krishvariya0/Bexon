@@ -17,7 +17,7 @@ body {
 /* ========== Layout Helpers ========== */
 .container {
   width: 100%;
-  max-width: 1466px;
+  max-width: 1500px;
   margin: 0 15px;
   padding: 0 15px;
 }
@@ -1785,15 +1785,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
-  overflow-x: auto;
+  margin: 20px 20px;
+  overflow-x: hidden;
+  border-radius: 12px;
   /* if you want vertical centering too */
 }
 
 .solution {
   display: flex;
   /* flex-direction: column; */
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1811,8 +1812,8 @@ body {
 
 .wining-section-5-svg {
   color: #1e8a8a;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .solution-section-5-hed {
@@ -1831,20 +1832,22 @@ body {
 
 /* ==========card================ */
 
-.solution-main-section-card{
+
+.solution-main-section-card {
   display: flex;
   gap: 2rem;
   padding-bottom: 15px;
- /* max-width: 100%; */
- overflow-x: scroll;
- margin: 0 15px;
- animation: scroll-my 61s linear infinite;
+  /* max-width: 100%; */
+  overflow: hidden;
+  margin: 0 15px;
+  animation: scroll-my 61s linear infinite;
 }
 
 @keyframes scroll-my {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -1857,11 +1860,13 @@ body {
   height: 450px;
   overflow: hidden;
   border-radius: 12px;
+  border: 2px solid #0d1d1d;
+
 }
 
 .solution-section-card-img img {
-  width: 324px;
-  height: 450px;
+  width: 320px;
+  height: 440px;
   object-fit: cover;
   border-radius: 12px;
   display: block;
@@ -2002,24 +2007,483 @@ body {
 }
 
 
+@media (max-width: 1024px) {
+  .solution-main-section-card {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    animation: scroll-my 61s linear infinite;
+    padding: 10px 10px 20px 10px;
+    gap: 1.5rem;
+  }
+
+  .solution-section-card {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 400px;
+  }
+
+  .solution-section-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .solution-section-card-contant {
+    padding: 15px;
+  }
+
+  /* Hide hover-based content on tablets */
+  .solution-section-card:hover .solution-section-card-contant,
+  .solution-section-card:hover .solution-section-card-contant-text-2,
+  .solution-section-card:hover .solution-section-card-contant-erro,
+  .solution-section-card:hover .icon-opacity {
+    background-color: #18292c !important;
+    display: none !important;
+  }
+
+  .solution-section-card-contant-text-2,
+  .solution-section-card-contant-erro {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .solution-main-section-card {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    animation: scroll-my 61s linear infinite;
+    padding: 10px 10px 15px 10px;
+    gap: 1rem;
+  }
+
+  .solution-section-card {
+    flex: 0 0 auto;
+    width: 240px;
+    height: 360px;
+  }
+
+  .solution-section-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .solution-section-card-contant {
+    padding: 12px;
+  }
+
+  .solution-section-card-contant-text-1 {
+    font-size: 18px;
+  }
+
+  /* Disable hover effects */
+  .solution-section-card:hover .solution-section-card-contant,
+  .solution-section-card:hover .solution-section-card-contant-text-2,
+  .solution-section-card:hover .solution-section-card-contant-erro,
+  .solution-section-card:hover .icon-opacity {
+    background-color: #18292c !important;
+    display: none !important;
+  }
+
+  .solution-section-card-contant-text-2,
+  .solution-section-card-contant-erro {
+    display: none !important;
+  }
+
+  .icon-opacity {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-main-section-card {
+    padding: 8px;
+    gap: 0.8rem;
+  }
+
+  .solution-section-card {
+    width: 200px;
+    height: 320px;
+  }
+
+  .solution-section-card-contant {
+    padding: 10px;
+  }
+
+  .solution-section-card-contant-text-1 {
+    font-size: 16px;
+  }
+}
 
 
+/* ============section=6================================= */
+/* Section 6 main container */
+.section-6-main {
+  padding: 120px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Section title with SVG icon */
+.section-6-contan-svg {
+  display: flex;
+  align-items: center;
+  border: 1.5px dotted #1E8A8A;
+  padding: 2px 10px;
+  text-align: justify;
+  gap: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.section-6-contan-svg svg {
+  width: 25px;
+  height: 23px;
+  color: #218b8c;
+}
+
+.section-6-contan-svg h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Content text layout */
+.section-contant-tetx-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Main headline */
+.section-contant-text-1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0c1e21;
+  margin-bottom: 20px;
+}
+
+.section-contant-text-1 span {
+  color: #1e8a8a;
+}
+
+/* Subheading paragraph */
+.section-contant-text-2 {
+  font-size: 16px;
+  color: #4a5a5a;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button styles */
+.section-contant-text-3 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 16px;
+  background: #1e8a8a;
+  color: transparent;
+  /* Hide text to use ::before/::after */
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(33, 139, 140, 0.25);
+}
+
+/* Default button text (visible) */
+.section-contant-text-3::after {
+  content: "More Projects";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Slide-in hover text */
+.section-contant-text-3::before {
+  content: "More Projects";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(100%);
+  opacity: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover in */
+.section-contant-text-3:hover::before {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+/* Hover out */
+.section-contant-text-3:hover::after {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Arrow icon background */
+.section-contant-text-3 .section-6-erro {
+  display: inline-flex;
+  background-color: #000;
+  color: #fff;
+  height: 32px;
+  width: 32px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Rotating arrow effect */
+.section-contant-text-3 .section-6-erro i {
+  font-size: 14px;
+  transform: rotate(-45deg);
+  transition: transform 0.4s ease;
+}
+
+.section-contant-text-3:hover .section-6-erro i {
+  transform: rotate(0deg);
+}
+
+/* Optional: Image layout styling if needed */
+.section-6-main-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.section-main-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
 
+/* 🧱 Grid Layout */
+.section-6-main-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  grid-auto-rows: 450px;
+}
 
+/* Grid placement */
+.section-6-main-img-1 {
+  grid-column: span 3 / span 3;
+}
 
+.section-6-main-img-2 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 4;
+}
 
+.section-6-main-img-3 {
+  grid-column: span 2 / span 2;
+  grid-row-start: 2;
+}
 
+.section-6-main-img-4 {
+  grid-column: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
 
+/* 🖼 Image container common styles */
+.section-main-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
 
+.section-main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
 
+/* 🔍 Zoom image on hover */
+.section-main-img:hover img {
+  transform: scale(1.08);
+}
 
+/* 📦 Content overlay inside image */
+.section-6-main-img-1-contant {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 15px;
+}
 
+.section-6-main-img-1-contant-2 {
+  display: flex;
+  justify-content: space-between;
+}
 
+/* 🔘 Connect Button */
+.section-6-main-img-1-contant button {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.section-6-main-img-1-contant button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 
+}
 
+/* 💬 Text under Connect */
+.section-6-main-img-1-contant-2 p {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
 
+/* 🎯 Arrow button (initially hidden) */
+.section-6-contant-svg-1 .section-6-erro-svg-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
 
+.section-6-contant-svg-1:hover .section-6-erro-svg-1 {
+  background-color: #1e8a8a;
 
+}
 
+/* ➕ Show arrow on full image card hover */
+.section-main-img:hover .section-6-erro-svg-1 {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+
+}
+
+/* 🔁 Rotate arrow only when hovered directly */
+.section-6-erro-svg-1 i {
+  font-size: 25px;
+  transform: rotate(-45deg);
+  transition: transform 0.4s ease;
+}
+
+.section-6-erro-svg-1:hover i {
+  transform: rotate(0deg);
+
+}
+
+@media (max-width: 768px) {
+  .section-6-main-img {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .section-6-main-img-1 {
+    grid-column: span 1 / span 1;
+    grid-row-start: 1;
+  }
+  .section-6-main-img-2 {
+    grid-column: span 1 / span 1;
+    grid-row-start: 2;
+  }
+  .section-6-main-img-3 {
+    grid-column: span 1 / span 1;
+    grid-row-start: 3;
+  }
+.section-main-img img {
+height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 1% 20% ;
+  border-radius: 12px;
+}
+.section-contant-tetx-main{
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: flex-start  ;
+  gap: 0;
+}
+.section-6-contan-svg{
+  justify-content: center;
+  align-items: center;
+
+}
+} 
+@media (max-width: 480px) {
+  .section-6-main {
+    padding: 60px 20px;
+  }
+
+  .section-6-contan-svg h3 {
+    font-size: 18px;
+  }
+
+  .section-contant-text-1 {
+    font-size: 32px;
+  }
+
+  .section-contant-text-2 {
+    font-size: 14px;
+  }
+
+  .section-contant-text-3 {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .section-main-img img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+  }
+  
+}
