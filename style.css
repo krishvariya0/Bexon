@@ -2614,30 +2614,32 @@ height: 350px;
   margin: 0 40px;
 }
 
-.section-7-contant {
-  padding: 120px 20px;
-  margin: 0 50px;
-  padding: 0 15px;
+
+.section-7-contant{
+    padding: 120px 20px;
+    margin: 0 50px;
+    padding: 0 15px;
 }
 
-.section-7-contant-text {
-  margin: 30px 150px;
-  padding: 30px 0;
+.section-7-contant-text{
+    /* padding: 120px 20px; */
+    margin: 30px 150px;
+    padding: 30px 0;
 }
-.section-7-contant-text p {
-  font-size: 48px;
-  font-weight: 500;
-  margin-bottom: 30px;
+.section-7-contant-text p{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
-.section-7-contant-text span {
-  color: #1e8a8a;
+.section-7-contant-text span{
+    color: #1e8a8a;
 }
 
-.section-7hed {
+.section-7hed{
   display: flex;
   align-items: center;
-  gap: 12px;
-  width: 100%;
+  gap: 12px; /* space between icon and text */
+  width:100%;
   margin-bottom: 20px;
   justify-content: space-between;
 }
@@ -2662,7 +2664,7 @@ height: 350px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: transparent;
+  background:transparent;
   color: #000000;
   font-size: 22px;
   box-shadow: 0 2px 8px rgba(33,139,140,0.08);
@@ -2709,11 +2711,13 @@ height: 350px;
 }
 
 .section-7-arrow.left-arrow::after {
-  content: "\f053";
+  content: "\f053"; /* fa-chevron-left */
+  /* New left arrow comes from right */
   transform: translate(100%, -50%) scale(0.8);
 }
 .section-7-arrow.right-arrow::after {
-  content: "\f054";
+  content: "\f054"; /* fa-chevron-right */
+  /* New right arrow comes from left */
   transform: translate(-100%, -50%) scale(0.8);
 }
 
@@ -2738,7 +2742,7 @@ height: 350px;
 .section-7-arrow.right-arrow:hover::after {
   color: #fff;
 }
-.section-7-main-card {
+.section-7-main-card{
   display: flex;
   gap: 24px;
   justify-content: flex-start;
@@ -2762,9 +2766,9 @@ height: 350px;
   border-radius: 8px;
 }
 
-.section-7-card {
-  width: calc((100% - 48px) / 3);
-  min-width: 320px;
+.section-7-card{
+  width: 413px;
+  min-width: 340px;
   max-width: 100%;
   height: 447px;
   background-color: #fff;
@@ -2786,13 +2790,13 @@ height: 350px;
   transform: translateY(-6px) scale(1.02);
 }
 
-.section-7-card-svg {
+.section-7-card-svg{
   color: #1e8a8a;
   font-size: 38px;
   margin-bottom: 10px;
 }
 
-.section-7-card-contant p {
+.section-7-card-contant p{
   font-size: 18px;
   line-height: 1.444;
   padding: 15px 0 15px 0;
@@ -2801,14 +2805,14 @@ height: 350px;
   margin-bottom: 0;
 }
 
-.section-7-card-buttom {
+.section-7-card-buttom{
   display: flex;
   align-items: center;
   gap: 1.5rem;
   padding-top: 20px;
 }
 
-.section-7-card-buttom img {
+.section-7-card-buttom img{
   width: 62px;
   height: 62px;
   border-radius: 50%;
@@ -2831,21 +2835,56 @@ height: 350px;
   color: #0c1e21;
 }
 
-.img-contant-7 p {
+.img-contant-7 p{
   font-size: 16px;
   color: #4a5a5a;
   margin: 0;
   font-weight: 400;
 }
 
-/* Responsive: 2 cards per view on tablets */
+@media (max-width: 992px) {
+  .section-7-main-card {
+    gap: 16px;
+    padding: 16px 0;
+  }
+  .section-7-card {
+    width: 320px;
+    min-width: 260px;
+    height: auto;
+    padding: 22px 12px;
+  }
+  .section-7-card-buttom img {
+    width: 48px;
+    height: 48px;
+  }
+  .img-contant-7 h4 {
+    font-size: 18px;
+  }
+  .img-contant-7 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-7-main-card {
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .section-7-card {
+    width: 90vw;
+    min-width: 220px;
+    padding: 14px 6px;
+  }
+  .section-7-card-buttom img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 1200px) {
   .section-7-main-box {
     margin: 40px 15px 0 15px;
     max-width: 100%;
-  }
-  .section-7-contant-text {
-    margin: 30px 40px;
   }
 }
 
@@ -2867,29 +2906,6 @@ height: 350px;
   .section-count-divider {
     height: 60px;
     margin: 0 20px;
-  }
-  .section-7-main-card {
-    gap: 16px;
-    padding: 16px 0;
-  }
-  .section-7-card {
-    width: calc((100% - 24px) / 2);
-    min-width: 260px;
-    height: auto;
-    padding: 22px 12px;
-  }
-  .section-7-card-buttom img {
-    width: 48px;
-    height: 48px;
-  }
-  .img-contant-7 h4 {
-    font-size: 18px;
-  }
-  .img-contant-7 p {
-    font-size: 14px;
-  }
-  .section-7-contant-text p {
-    font-size: 32px;
   }
 }
 
@@ -2926,106 +2942,11 @@ height: 350px;
     padding: 20px 0;
     min-width: 0;
   }
-  .section-7-main-card {
-    gap: 10px;
-    padding: 10px 0;
-  }
-  .section-7-card {
-    width: 90vw;
-    min-width: 220px;
-    padding: 14px 6px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(33,139,140,0.08);
-  }
-  .section-7-card-buttom img {
-    width: 40px;
-    height: 40px;
-  }
-  .img-contant-7 h4 {
-    font-size: 16px;
-  }
-  .img-contant-7 p {
-    font-size: 13px;
-  }
-  .section-7-contant-text {
-    margin: 20px 0;
-    padding: 20px 0;
-  }
-  .section-7-contant-text p {
-    font-size: 24px;
-  }
-  .section-7-contant {
-    margin: 0 10px;
-    padding: 0 5px;
-  }
-  /* Make card content more compact */
-  .section-7-card-contant p {
-    font-size: 15px;
-    padding: 10px 0;
-  }
-  .section-7-card-svg {
-    font-size: 28px;
-    margin-bottom: 6px;
-  }
-  .section-7-card-buttom {
-    gap: 0.7rem;
-    padding-top: 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  .section-7-main-card {
-    gap: 8px;
-    padding: 8px 0;
-  }
-  .section-7-card {
-    width: 98vw;
-    min-width: 0;
-    max-width: 100vw;
-    padding: 10px 4px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(33,139,140,0.08);
-    /* Make card content stack vertically and center */
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .section-7-card-buttom img {
-    width: 32px;
-    height: 32px;
-  }
-  .img-contant-7 h4 {
-    font-size: 15px;
-  }
-  .img-contant-7 p {
-    font-size: 12px;
-  }
-  .section-7-contant-text p {
-    font-size: 18px;
-  }
-  .section-7-card-contant p {
-    font-size: 14px;
-    padding: 8px 0;
-  }
-  .section-7-card-svg {
-    font-size: 24px;
-    margin-bottom: 4px;
-  }
-  .section-7-card-buttom {
-    gap: 0.5rem;
-    padding-top: 8px;
-  }
-  /* Add more padding for touch targets */
-  .section-7-card-buttom img {
-    margin-right: 6px;
-  }
 }
 
 @media (max-width: 480px) {
   .section-7-main-box {
-    padding: 12px 2vw;
+    padding: 20px 2vw;
     border-radius: 8px;
   }
   .section-count-number {
@@ -3035,56 +2956,6 @@ height: 350px;
     font-size: 14px;
   }
   .section-count-divider {
-    margin: 10px auto;
-  }
-  .section-7-contant-text {
-    margin: 10px 0;
-    padding: 10px 0;
-  }
-  .section-7-contant-text p {
-    font-size: 14px;
-  }
-  .section-7-main-card {
-    gap: 4px;
-    padding: 4px 0;
-  }
-  .section-7-card {
-    width: 99vw;
-    min-width: 0;
-    max-width: 100vw;
-    padding: 6px 2px;
-    border-radius: 6px;
-    /* Stack content vertically and center */
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0 1px 2px rgba(33,139,140,0.06);
-  }
-  .section-7-card-buttom img {
-    width: 24px;
-    height: 24px;
-    margin-right: 4px;
-  }
-  .img-contant-7 h4 {
-    font-size: 12px;
-  }
-  .img-contant-7 p {
-    font-size: 10px;
-  }
-  .section-7-card-contant p {
-    font-size: 11px;
-    padding: 4px 0;
-  }
-  .section-7-card-svg {
-    font-size: 18px;
-    margin-bottom: 2px;
-  }
-  .section-7-card-buttom {
-    gap: 0.3rem;
-    padding-top: 4px;
-  }
-  /* Add spacing between stacked elements */
-  .section-7-card > * + * {
-    margin-top: 6px;
+    margin: 15px auto;
   }
 }
