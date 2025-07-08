@@ -669,7 +669,7 @@ body {
   background-color: #0c1e21;
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 50px;
   /* justify-content: center;   vertical centering */
   padding-left: 70px;
 }
@@ -1009,6 +1009,7 @@ body {
   .left-banner-erro-section {
     /* margin-left: 10px; */
     margin-right: 10px;
+    margin-left: 0;
   }
 
   /* .left-banner-erro svg{
