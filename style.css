@@ -995,7 +995,7 @@ body {
 @media (max-width: 576px) {
   .left-banner {
     /* padding: 80px 20px; */
-    min-height: 600px;
+    min-height: 530px;
   }
 
   .left-banner-tital {
